@@ -18,5 +18,10 @@
 <app-componente1 [testo]="messaggio"></app-componente1>
 </div>
 </div>
+<app-post
+*ngFor="let p of posts"
+[titolo]="p.titolo"
+[testo]="p.testo">
+</app-post>
 </body>
 </html>
